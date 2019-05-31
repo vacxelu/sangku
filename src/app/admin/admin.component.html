@@ -1,0 +1,28 @@
+<section class="container admin-header">
+  <nav class="">
+    <div class="" id="">
+      <ul class="d-flex justify-content-around align-items-center admin-header-ul">
+        <li class="active">
+          <a
+            class="btn" 
+             (click)="show1()"
+             routerLink="/admin"
+             [ngClass]="{'btn-success': trangthai, 'btn-danger': !trangthai}"
+          >Quản Lý Phim</a>
+        </li>
+        <li class="">
+          <a 
+          class="btn" 
+            [ngClass]="{'btn-success': !trangthai, 'btn-danger': trangthai}"
+            routerLink="/admin/them-nguoi-dung"
+            (click)="show2()"
+            >Quản Lý Người Dùng</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</section>
+<section class="admin-text">
+  <router-outlet></router-outlet>
+
+</section>

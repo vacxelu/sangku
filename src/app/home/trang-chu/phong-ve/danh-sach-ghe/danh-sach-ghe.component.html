@@ -1,0 +1,38 @@
+<!-- <h1>Danh Sach Ghe</h1>
+<ng-container *ngFor="let item of danhSachGhe; let stt=index">
+    <app-ghe [ghe]="item"></app-ghe>
+    <br *ngIf="(stt+1)%8==0">
+</ng-container> -->
+
+<div class="container dsghe">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>Tai Xe</h1>
+            <ng-container *ngFor="let item of danhSachGhe;let stt=index ">
+                <br *ngIf="stt%8===0">
+                <app-ghe [ghe]="item" (eventGhe)="datghe($event)"></app-ghe>
+            </ng-container>
+        </div>
+        <div class="col-sm-3">
+            <h1>Danh Sach Ghe Da Dat</h1>
+
+            <ng-container *ngFor="let item of GheDuocDat;let index=index">
+                <span>Ghe: So</span> {{item.MaGhe}} <span>$</span> {{item.GiaVe}}
+                <button class="btn " *ngIf="trangthaihuy; else khongduochuy" style="color:red"
+                    (click)="Huy(item.MaGhe)">[Huy]</button>
+
+                <br>
+            </ng-container>
+            <ng-template #khongduochuy>
+                <button class="btn " style="color:red">[Huy]</button>
+            </ng-template>
+
+        </div>
+        <div class="col-sm-3">
+            <h1>Tong Tien</h1>
+            <h4>{{ tinhtong()}}</h4>
+            <button class="btn btn-success mr-2" (click)="datVe()">Dat Ve</button>
+            <button class="btn btn-danger" (click)="huyVe()">Huy Ve</button>
+        </div>
+    </div>
+</div>

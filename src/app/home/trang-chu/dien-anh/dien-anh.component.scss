@@ -1,0 +1,56 @@
+.dienanh1{
+    margin-bottom: 2rem;
+}
+.hinhanh{
+    display: flex
+}
+// .hinhanh1{
+//     width: 10rem;
+// }
+.hinhanh1 img{
+    width: 100%;
+    border-radius: 2%
+}
+// .hinhanh2{
+//     width: 50rem;
+// }
+
+.anhnho img{
+    width: 4rem;
+}
+.anhnho p{
+    color:#4a4a4ac9;
+}
+.dienanh{
+    margin-bottom: 5rem
+}
+.p1{
+    font-weight: bold;
+    margin-top: 1rem; 
+    margin-bottom: 0.5rem;
+}
+.p2{
+    color:gray;
+}
+.anhnho{
+    display: flex;
+}
+.hinhnho img{
+    border-radius: 0.3rem;
+}
+
+@media screen and(min-width: 425px){
+    .hinhanh{
+        display: block;
+    }
+}
+@media screen and(min-width: 320px){
+    .hinhanh{
+        display: block;
+    }
+}
+@media screen and(min-width: 768px){
+    .hinhanh{
+        display: flex;
+    }
+}

@@ -1,0 +1,35 @@
+<section class="container them-phim">
+  <h1 class="text-center">Cập Nhật Người Dùng</h1>
+  <form #FormCapNhatNguoiDung="ngForm" (ngSubmit)="CapNhatNguoiDung(FormCapNhatNguoiDung.value,FormCapNhatNguoiDung)">
+
+    <div class="form-group">
+      <input name="TaiKhoan" readonly ngModel type="text" class="form-control" placeholder="Tài Khoản">
+    </div>
+    <div class="form-group">
+      <input name="MatKhau" ngModel type="text" class="form-control" placeholder="Mật Khẩu">
+    </div>
+    <div class="form-group">
+      <input name="HoTen" ngModel type="text" class="form-control" placeholder="Họ Và Tên">
+    </div>
+    <div class="form-group">
+      <label>Mã Loại Người Dùng</label>
+      <select class="form-control" name="MaLoaiNguoiDung" ngModel>
+        <option>KhachHang</option>
+        <option>QuanTri</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Mã Nhóm</label>
+      <select class="form-control" name="MaNhom" ngModel>
+        <option>GP06</option>
+        <option>GP07</option>
+        <option>GP08</option>
+        <option>GP09</option>
+        <option>GP10</option>
+      </select>
+    </div>
+    <button class="btn btn-block btn-success ">Cập Nhật Người Dùng</button>
+
+  </form>
+
+</section>

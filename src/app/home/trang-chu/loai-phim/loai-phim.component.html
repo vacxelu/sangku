@@ -1,0 +1,21 @@
+<div class="row mt-4 loai">
+  <div class="col-12 text-center">
+    <button class="mr-2 btn" [ngClass]="{'btn-success': dangChieuStatus, 'btn-danger': !dangChieuStatus}"
+      (click)="HienPhimDangChieu()">Phim Đang
+      Chiếu</button>
+    <button class="btn" [ngClass]="{'btn-success': !dangChieuStatus, 'btn-danger': dangChieuStatus}"
+      (click)="HienPhimSapChieu()">Phim Sắp
+      Chiếu</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12" *ngIf="dangChieuStatus;else phimSapChieu">
+    <app-phim-dang-chieu (eventItem)='modalDetail($event)' ></app-phim-dang-chieu>
+  </div>
+  <ng-template #phimSapChieu>
+    <div class="col-12">
+      <app-phim-sap-chieu></app-phim-sap-chieu>
+    </div>
+  </ng-template>
+
+</div>

@@ -1,0 +1,13 @@
+
+<ng-container *ngIf="DanhSachPhimDangChieu">
+  <div class="phimDangChieu mt-4" id="phim">
+      <owl-carousel  [options]="slidesOptions" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class="item" *ngFor="let phim of DanhSachPhimDangChieu;let i = index">
+              <div>
+                  <app-item-phim (eventItem)='modalDetail($event)' [ItemPhim]="phim"></app-item-phim>
+              </div>
+          </div>
+      </owl-carousel>
+  </div>
+  </ng-container>
+  

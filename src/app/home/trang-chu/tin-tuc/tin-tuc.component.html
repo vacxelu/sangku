@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-12 text-center loai">
+
+    <button 
+     
+      class="btn btn-success mr-2" 
+      (click)="ChonLoaiTin('DienAnh')"
+      (click)="chon1()"
+      [ngClass]="{'btn-danger': dienanh, 'btn-success': !dienanh}"
+    >Điện Ảnh</button>
+
+    <button 
+      class="btn btn-success mr-2" 
+      (click)="ChonLoaiTin('review')"
+      (click)="chon2()"
+      [ngClass]="{'btn-danger': review, 'btn-success': !review}"
+     
+    >ReView</button>
+
+    <button 
+      class="btn btn-success" 
+      (click)="ChonLoaiTin('KhuyenMai')"
+      (click)="chon3()"
+      [ngClass]="{'btn-danger': khuyenmai, 'btn-success': !khuyenmai}"
+      >Khuyến Mãi</button>
+  </div>
+</div>
+
+<div class="row" [ngSwitch]="loaiTinTuc">
+  <div *ngSwitchCase="'DienAnh'" class="col-12">
+    <app-dien-anh></app-dien-anh>
+  </div>
+  <div *ngSwitchCase="'review'" class="col-12">
+    <app-review></app-review>
+  </div>
+  <div *ngSwitchCase="'KhuyenMai'" class="col-12">
+    <app-khuyen-mai></app-khuyen-mai>
+  </div>
+</div>

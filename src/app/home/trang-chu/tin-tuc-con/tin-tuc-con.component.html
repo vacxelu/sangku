@@ -1,0 +1,19 @@
+<section class="Tin_Tuc mt-5" >
+  <div class="container ">
+    <h1 class="text-center">{{danhSachTinDuocLay.title}}</h1>
+    <h4 class="mt-5">{{danhSachTinDuocLay.subtitle}}</h4>
+    <p>{{danhSachTinDuocLay.text1}}</p>
+    <div class="text-center">
+      <iframe  [src]="danhSachTinDuocLay.iframe | safe" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>{{danhSachTinDuocLay.text2}}</p>
+    <div class="text-center">
+      <img class="img-fluid" [src]="danhSachTinDuocLay.HinhItem1" alt="">
+    </div>
+    <p>{{danhSachTinDuocLay.text3}}</p>
+    <div class="text-center">
+      <img class="img-fluid" [src]="danhSachTinDuocLay.HinhItem3" alt="">
+    </div>
+  </div>
+</section>

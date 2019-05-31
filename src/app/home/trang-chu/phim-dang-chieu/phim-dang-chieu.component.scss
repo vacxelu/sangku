@@ -1,0 +1,49 @@
+
+.phimDangChieu{
+    /deep/.owl-prev{
+        position: absolute;
+        top:25%;
+        left:-40px;
+        border:none;
+        span{
+            font-size:60px;
+            color:rgb(180,180,180);    
+        }
+    }
+    
+    /deep/.owl-next{
+            position: absolute;
+            top:25%;
+            right:-40px;
+            span{
+                font-size:60px;
+                color:rgb(180,180,180)
+            }
+        }
+}
+// .phimDangChieu{
+//     height: 18rem;
+// }
+@media only screen and (min-width: 768px) {
+
+    .owl-nav {
+    display:none;
+    }
+    
+    .owl-stage {
+    transform: none !important;
+    width: 100% !important;
+    }
+    
+    .owl-carousel .owl-stage-outer {
+    
+    width: 110%;
+    overflow: visible;
+    }
+    
+    #ProductThumbs > .owl-stage-outer > .owl-stage > .owl-item {
+    display: inline-grid;
+    float: none;
+    
+    }
+    }

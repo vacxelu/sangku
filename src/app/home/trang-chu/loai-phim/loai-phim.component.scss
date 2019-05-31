@@ -1,0 +1,10 @@
+.btn-tam{
+    background-color: grey;
+}
+@media screen and(max-width: 320px){
+    .loai{
+        button{
+            padding: 5px 8px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.Tin_Tuc{
+    iframe{
+        width:700px;
+         height:420px;
+    }
+}
+@media screen and (max-width:768px){
+    .Tin_Tuc{
+        iframe{
+            width:370px;
+             height:210px;
+             max-width: 100%;
+        }
+        
+    }
+}

@@ -1,0 +1,69 @@
+<header class="my-header">
+    <nav class="navbar navbar-expand-lg navbar-light repnav">
+        <a class="navbar-brand" href="home#">
+            <img src="../../../assets/img/web-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-9" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                        <a class="nav-link" href="home#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="home#phim">Phim</a>
+
+                </li>
+
+                <li class="nav-item">
+                        <a class="nav-link" href="home#tintuc">Tin Tức</a>
+
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="home#">Ứng Dụng</a>
+
+                </li>
+            </ul>
+            <ng-container *ngIf="dangNhap , else elseDangNhap">
+                <a href="#" routerLink="/home/form/login" class="header-login">
+                    <i class="fa fa-user-circle"></i>
+                    <span>Đăng Nhập</span>
+                </a>
+            </ng-container>
+            <ng-template #elseDangNhap>
+                <a class="header-login">
+                    <i class="fa fa-user-circle"></i>
+                    <span class="" (click)="dangXuat()">{{user.TaiKhoan}}</span>
+                </a>
+            </ng-template>
+            
+        </div>
+    </nav>
+</header>
+<!-- <header class="header">
+  
+  <a href="#">
+      <img src="../../../assets/img/web-logo.png" alt="">
+  </a>
+  <nav class="navbar">
+      <ul>
+          <li class="active">
+              <a routerLink="/home/Lich-Chieu">Lịch Chiếu</a>
+          </li>
+          <li>
+              <a href="#">Cụm rạp</a>
+          </li>
+          <li>
+              <a href="#new">Tin Tức</a>
+          </li>
+          <li>
+              <a href="#">Ứng Dụng</a>
+          </li>
+      </ul>
+  </nav>
+  <a href="#" class="header-login">
+      <i class="fa fa-user-circle"></i>
+      <span>Đăng Nhập</span>
+  </a>
+</header> -->

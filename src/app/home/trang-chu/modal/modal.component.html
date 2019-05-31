@@ -1,0 +1,18 @@
+<div class="modal fade" id="myModal"(click)="dong()">
+    <div class="modal-dialog" >
+      <div class="modal-content">      
+        <!-- Modal body -->
+        <div class="modal-body">
+            <!-- [src]="imgA | safe1" -->
+            <iframe width="729" height="410" [src]="Item  | safe1"
+            frameborder="0"
+            ></iframe>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger"  (click)="dong()" data-dismiss="modal">Close</button>
+        </div>
+        <!-- (click)="dong()" -->
+      </div>
+    </div>
+  </div>

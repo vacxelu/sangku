@@ -1,0 +1,44 @@
+<ng-container *ngIf="detailMovie">
+  <div class="container chitiet">
+    <div class="row">
+      <div class="col-sm-4">
+        <img [src]="detailMovie.HinhAnh" alt="">
+      </div>
+      <div class="col-sm-8">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Ten Phim</th>
+              <th>{{detailMovie.TenPhim}}</th>
+            </tr>
+            <tr>
+              <th>Mo Ta</th>
+              <th>{{detailMovie.MoTa}}</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>Rap</th>
+              <th>Ngay</th>
+              <th>Gio</th>
+            </tr>
+            <tr *ngFor="let item of detailMovie.LichChieu">
+              <th>{{item.Rap.TenRap}}</th>
+              <th>{{item.NgayChieuGioChieu | date: "mm-dd-yyyy"}}</th>
+              <th>{{item.NgayChieuGioChieu | date: "hh-mm-yyyy"}}</th>
+              <th>
+                <Button class="btn btn-success"(click)="datve(item.MaLichChieu)">Dat Ve</Button>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>

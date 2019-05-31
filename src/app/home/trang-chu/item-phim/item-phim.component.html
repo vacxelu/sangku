@@ -1,0 +1,15 @@
+<div class="thu">
+  <div class="movie movie-item item">
+    <img [src]="ItemPhim.HinhAnh" class="anh1"alt="">
+    <p>{{ItemPhim.TenPhim}}</p>
+    <button class="btn-read-more  nut1" routerLink="/home/chi-tiet/{{ItemPhim.MaPhim}}">Mua Ve</button>
+    <!-- <button class="btn-read-more" class="btn btn-success" [routerLink]="['/home/chi-tiet/',ItemPhim.MaPhim]"
+    [queryParams]="{tenPhim: ItemPhim.TenPhim}">Mua Ve</button> -->
+    <button class="btn-read-more1"  (click)="modalDetail(ItemPhim.Trailer)" data-toggle="modal" data-target="#myModal" >
+      <img  class="anh2" src="../../../../assets/img/play-video.png" alt="">
+    </button>
+    <!-- <app-modal [item]="ItemPhim"></app-modal> -->
+  </div>
+  
+
+</div>

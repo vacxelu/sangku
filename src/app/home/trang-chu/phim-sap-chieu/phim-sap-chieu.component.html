@@ -1,0 +1,19 @@
+<!-- <ng-container *ngIf="DanhSachPhimSapChieu !== null"> -->
+  <!-- <div class="owl-carousel owl-theme">
+    <div class="item" *ngFor="let phim of DanhSachPhimSapChieu">
+      <app-item-phim [ItemPhim]="phim"></app-item-phim>
+    </div>
+  </div> -->
+<!-- </ng-container> -->
+
+<ng-container *ngIf="DanhSachPhimSapChieu">
+  <div class="phimDangChieu mt-5">
+      <owl-carousel  [options]="slidesOptions" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class="item" *ngFor="let phim of DanhSachPhimSapChieu;let i = index">
+              <div>
+                  <app-item-phim [ItemPhim]="phim"></app-item-phim>
+              </div>
+          </div>
+      </owl-carousel>
+  </div>
+  </ng-container>

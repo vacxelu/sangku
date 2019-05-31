@@ -1,0 +1,88 @@
+.footer{
+    background-color: #ffffff;
+    
+}
+.footer-content{
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.footer-content h1{
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 2rem;
+    letter-spacing: 1.2px;
+}
+.footer-title{
+    padding-right:5rem;
+}
+.footer-title p{
+    font-size: .8rem;
+    line-height: 2em;
+    font-weight: bold;
+    margin-bottom: 2em;
+    letter-spacing: 1px;
+    color:black;
+}
+.footer-title .btn-outline-secondary{
+    color: black;
+    border-color: #0275d8;
+    background-color: #0275d8;
+    font-weight: bold;
+
+}
+.footer-item{
+    width: 230px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer-item ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-item li{
+    font-size: .8rem;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: black;
+  
+    font-weight: bold;
+
+}
+.footer-item1 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-item1 li{
+    font-size: .8rem;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bold;
+
+}
+.copy{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: #252525;
+    line-height: 50px;
+    text-align: center;
+    font-size: .8rem;
+}
+.chinh1{
+    padding-top: 0px;
+}
+@media screen and(min-width: 320px){
+    .chinh{
+        display: block;
+    }
+}
+@media screen and(min-width: 768px){
+    .chinh{
+        display: flex;
+    }
+}
